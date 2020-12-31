@@ -1,16 +1,32 @@
-<h1>Welcome, <%= current_user.username %></h1>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-md-12">
+      <h1 class="center">Welcome, <%= current_user.username %></h1>
+    </div>
+  </div>
+</div>
 
-  <p><strong>Your Public Repos:</strong>
-    <% @repo_data.each do |data| %>
-      <% if data[:private] == false %>
+<div class="container">
+  <div class="row d-flex">
+    <div class="col group-card">
+      <h3><strong>Your Public Repos</strong></h3>
+      <p>
+        <% @repo_data.each do |data| %>
+        <% if data[:private] == false %>
         <li> <%= data[:name] %> </li>
-      <% end %>
-    <% end %>
-  </p>
-  <p><strong>Your Private Repos:</strong>
-    <% @repo_data.each do |data| %>
-      <% if data[:private] == true %>
+        <% end %>
+        <% end %>
+      </p>
+    </div>
+    <div class="col group-card">
+      <h3><strong>Your Private Repos</strong></h3>
+      <p>
+        <% @repo_data.each do |data| %>
+        <% if data[:private] == true %>
         <li> <%= data[:name] %> </li>
-      <% end %>
-    <% end %>
-  </p>
+        <% end %>
+        <% end %>
+      </p>
+    </div>
+  </div>
+</div>
