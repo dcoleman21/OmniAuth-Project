@@ -53,15 +53,20 @@ li {
   border-bottom-right-radius:12px;
 }
 .login-card {
+  width: 120px;
   background-color: LightGray;
   padding: 20px;
   border: solid 1px #999;
-  box-shadow:  0 0 10px  rgba(0,12,0,0.6);
-  -moz-box-shadow: 0 0 10px  rgba(0,12,0,0.6);
-  -webkit-box-shadow: 0 0 10px  rgba(0,12,0,0.6);
-  -o-box-shadow: 0 0 10px  rgba(0,12,0,0.6);
   border-top-left-radius:12px;
   border-top-right-radius:12px;
   border-bottom-left-radius:12px;
   border-bottom-right-radius:12px;
+}
+
+.login-card:hover {
+  box-shadow:  0 0 10px  rgba(0,12,0,0.6);
+  -moz-box-shadow: 0 0 10px  rgba(0,12,0,0.6);
+  -webkit-box-shadow: 0 0 10px  rgba(0,12,0,0.6);
+  -o-box-shadow: 0 0 10px  rgba(0,12,0,0.6);
+  cursor: pointer;
 }
