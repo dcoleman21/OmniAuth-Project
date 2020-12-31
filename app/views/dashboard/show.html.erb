@@ -1,1 +1,16 @@
 <h1>Welcome, <%= current_user.username %></h1>
+
+  <p><strong>Your Public Repos:</strong>
+    <% @repo_data.each do |data| %>
+      <% if data[:private] == false %>
+        <li> <%= data[:name] %> </li>
+      <% end %>
+    <% end %>
+  </p>
+  <p><strong>Your Private Repos:</strong>
+    <% @repo_data.each do |data| %>
+      <% if data[:private] == true %>
+        <li> <%= data[:name] %> </li>
+      <% end %>
+    <% end %>
+  </p>
