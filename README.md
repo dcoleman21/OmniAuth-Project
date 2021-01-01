@@ -7,8 +7,15 @@ This a simple Rails app implementing GitHub OmniAuth to authenticate a user to v
 
 <img width="720" alt="Screen Shot 2020-12-31 at 6 51 10 PM" src="https://user-images.githubusercontent.com/60626984/103431653-34a15580-4b99-11eb-9e7b-6fd86ea7c91a.png">
 
-This page has a login in link that when clicked will, behind the scenes, make a Post request to GitHub on the Users behalf and generate a access token. The User will be asked to sign in via GitHub to continue.
+This page has a login in link that when clicked will, behind the scenes, make a Post request to GitHub on the Users behalf and generate a access token. 
 
 *Authentication Screenshot*
 
 <img width="720" alt="Screen Shot 2020-12-31 at 7 06 44 PM" src="https://user-images.githubusercontent.com/60626984/103431779-6d422e80-4b9b-11eb-890d-0e090294ec05.png">
+
+The User will be asked to sign in via GitHub. When the login on this page is clicked, the access token is used in a Get request to access their GitHub repositories and redirected to the dashboard page.
+
+*Redirect Screenshot*
+<img width="610" alt="Screen Shot 2020-12-31 at 7 14 44 PM" src="https://user-images.githubusercontent.com/60626984/103431905-61576c00-4b9d-11eb-95ba-8d9ae335dbbf.png">
+
+
