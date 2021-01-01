@@ -1,6 +1,6 @@
 # GitHub OmniAuth
 
-This a simple Rails app implementing GitHub OmniAuth to authenticate a user to view a list of their public repos and a separate list of their private repos. This was built as part of the *Turing School of Software and Design* Winter Break work to further our understanding of OmniAuth, which will be used in the next Mod 3 back-end engineering group project.
+This is a simple Rails app implementing GitHub OmniAuth to authenticate a user to view a list of their public repos and a separate list of their private repos. This was built as part of the *Turing School of Software and Design* Winter Break work to further our understanding of OmniAuth, which will be used in the next Mod 3 back-end engineering group project.
 
 
 *Home/Welcome Screenshot*
