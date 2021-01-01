@@ -11,20 +11,16 @@
     <div class="col group-card">
       <h3 class='fas fa-lock-open'> <strong>Your Public Repos</strong></h3>
       <p>
-        <% @repo_data.each do |data| %>
-        <% if data[:private] == false %>
-        <li> <%= data[:name] %> </li>
-        <% end %>
+        <% @public_repos.each do |repo| %>
+          <li> <%= repo.name %> </li>
         <% end %>
       </p>
     </div>
     <div class="col group-card">
       <h3 class='fas fa-lock'>  <strong>Your Private Repos</strong></h3>
       <p>
-        <% @repo_data.each do |data| %>
-        <% if data[:private] == true %>
-        <li> <%= data[:name] %> </li>
-        <% end %>
+        <% @private_repos.each do |repo| %>
+          <li> <%= repo.name %> </li>
         <% end %>
       </p>
     </div>
